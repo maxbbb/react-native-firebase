@@ -584,7 +584,7 @@ class RNFirebaseAuth extends ReactContextBaseJavaModule {
 
 
 
-    PhoneAuthProvider.getInstance(firebaseAuth).verifyPhoneNumber(phoneNumber, 3000, TimeUnit.SECONDS,
+    PhoneAuthProvider.getInstance(firebaseAuth).verifyPhoneNumber(phoneNumber, 120, TimeUnit.SECONDS,
       mReactContext.getCurrentActivity(), new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
         private boolean promiseResolved = false;
 
